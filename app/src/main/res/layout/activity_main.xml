@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginBottom="173dp"
+      android:gravity="center_horizontal"
+      android:text="@string/welcome_to_our_app"
+      android:textStyle="italic"
+      android:textSize="25sp"
+      app:layout_constraintBottom_toTopOf="@+id/editTextlanguage"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+
+  <EditText
+      android:id="@+id/editText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="5dp"
+      android:layout_marginEnd="5dp"
+      android:layout_marginTop="250dp"
+      android:hint="Please enter your name"
+      android:textStyle="italic"
+      android:textSize="15dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <EditText
+      android:id="@+id/editTextlanguage"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginEnd="40dp"
+      android:layout_marginBottom="16dp"
+      android:hint="What language you prefer, Hindi or English or Urdu?"
+      android:textSize="15sp"
+      android:textStyle="italic"
+      app:layout_constraintBottom_toTopOf="@+id/button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      tools:ignore="MissingConstraints" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:layout_marginBottom="41dp"
+      android:text="Say Hello"
+      android:textSize="18dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView"
+      app:layout_constraintStart_toStartOf="@+id/imageView"
+      app:layout_constraintTop_toBottomOf="@+id/editTextlanguage"
+      tools:ignore="MissingConstraints" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/imageView"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      app:civ_border_width="1dp"
+      app:civ_border_color="#E12513"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.502"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button"
+      tools:ignore="MissingConstraints,OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
