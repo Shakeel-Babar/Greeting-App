@@ -16,7 +16,7 @@
       android:gravity="center_horizontal"
       android:text="@string/welcome_to_our_app"
       android:textStyle="italic"
-      android:textSize="25sp"
+      android:textSize="25dp"
       app:layout_constraintBottom_toTopOf="@+id/editTextlanguage"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="1.0"
