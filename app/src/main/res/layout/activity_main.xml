@@ -34,7 +34,7 @@
       android:layout_marginTop="250dp"
       android:hint="@string/please_enter_your_name"
       android:textStyle="italic"
-      android:textSize="15dp"
+      android:textSize="16dp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
